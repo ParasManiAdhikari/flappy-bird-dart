@@ -1,0 +1,124 @@
+#field {
+  /* Groesse */
+  width: 698px;
+  height: 598px;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Aussehen */
+  border: 1px solid white;
+  border-radius: 10px;
+
+  /* Positionierung */
+  position: relative;
+  overflow: hidden;
+  background-image: url('img/static.jpg');
+}
+
+.bird {
+  /* Groesse und Form */
+  width: 50px;
+  height: 35px;
+
+  background-size: contain;
+
+  /* Aussehen */
+  background-image: url('img/bird.png');
+
+  /* Positionierung */
+  position: absolute;
+  left: 100px;
+}
+
+#sbutton {
+  /* Groesse */
+  height: 60px;
+  width: 70px;
+
+  /* Aussehen */
+  color: white;
+  font-size: 2.5em;
+  background-color: #168afd;
+  border-radius: 10px;
+
+  /* Positionierung */
+  margin-top: 20px;
+}
+
+#gameover {
+  color: orange;
+  display: none;
+}
+
+#points {
+  display: none;
+}
+
+/* Some basic styles */
+body {
+  font-family: Object Sans;
+  text-align: center;
+  background: radial-gradient(#B1D7B4 60%, #7FB77E);
+  color: white;
+}
+
+.title {
+  font-size: 1em;
+  margin-top: 0px;
+  color: green;
+}
+
+/* Dart Pong */
+h1 {
+  /*Aussehen*/
+  font-size: 2em;
+  text-align: center;
+  font-weight: bolder;
+  outline-color: blue;
+
+
+  /* Positionierung */
+  margin: 1em;
+  margin-bottom: 0.5em;
+}
+
+.pipe_up {
+  /*Große*/
+  height: 400px;
+  width: 50px;
+
+  /*Aussehen*/
+  background: radial-gradient(lightgreen 50%, green);
+  border: 5px solid black;
+  left: 800px;
+  /* Positionierung */
+  top: -50px;
+  /*starting value*/
+  position: absolute;
+}
+
+.pipe_down {
+  /*Große*/
+  width: 50px;
+
+  /*Aussehen*/
+  height: 500px;
+  background: radial-gradient(lightgreen 50%, green);
+  border: 5px solid black;
+  left: 800px;
+  /* Positionierung */
+  top: 550px;
+  /*starting value*/
+  position: absolute;
+}
+
+@keyframes pipeanim {
+  0% {
+    left: 760px
+  }
+
+  100% {
+    left: -60px
+  }
+}
